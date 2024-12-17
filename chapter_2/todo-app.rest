@@ -1,0 +1,50 @@
+# GET
+# GET http://localhost:5001
+
+#  Register a user POST /AUTH/REGISTER
+
+# POST http://localhost:5001/auth/register
+# Content-Type: application/json
+
+# {
+#     "username": "hungtest@gmail.com",
+#     "password": "11111111"
+# }
+
+# # Login a user POST /AUTH/REGISTER 
+# POST http://localhost:5001/auth/login
+# Content-Type: application/json
+
+# {
+#     "username": "hungtest@gmail.com",
+#     "password": "111111"
+# }
+
+GET http://localhost:5001/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM0NDA2NTcxLCJleHAiOjE3MzQ0OTI5NzF9.g2W0ZALFHYRIytayYUAdzp5BGxn3lIJoOuoX8oqsCIA
+
+
+# POST http://localhost:5001/todos
+# Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM0NDA2NTcxLCJleHAiOjE3MzQ0OTI5NzF9.g2W0ZALFHYRIytayYUAdzp5BGxn3lIJoOuoX8oqsCIA
+# Content-Type: application/json
+
+# {
+#     "task": "Finish coding the projects"
+# }
+
+# Update a todo PUT/TODOS/:ID
+# PUT http://localhost:5001/todos/3?page=4
+# Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM0NDA2NTcxLCJleHAiOjE3MzQ0OTI5NzF9.g2W0ZALFHYRIytayYUAdzp5BGxn3lIJoOuoX8oqsCIA
+# Content-Type: application/json
+
+# {
+#     "completed": 1
+# }
+
+# DELETE a todo DELETE
+# DELETE http://localhost:5001/todos/2
+# Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM0NDA1MDU2LCJleHAiOjE3MzQ0OTE0NTZ9.no7PJGnUDNXMLqPNeejEfH58BtwEELkCphn0Wv8VpBo
+# Content-Type: application/json
+
+
+
